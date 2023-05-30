@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background': '#f6eef6',
+                        'box':'#e4cde6',
+                        'color':'#d139ef',
+                    }
+                }
+            }
+        }
+</script>
+    <title>Login CDN</title>
+</head>
+<body class="bg-background text-center">
+    
+    <div class="pt-40">
+        <h1 class="text-2xl font-bold">
+            School PTA Management
+        </h1>
+        <h2 class="italic text-1xl pt-4 pb-12">
+            Parent Teacher Association
+        </h2>
+    </div>
+
+    <div class="max-w-[100%] px-[25%]">
+        <form class="max-sm bg-box rounded px-20 py-10 outline outline-1 outline-color">
+            
+            <h2 class="text-1xl font-bold pb-8">
+                Login
+            </h2>
+            
+            <div class="mb-6">
+                <input
+                    class="border rounded outline outline-1 outline-color w-full py-2 px-2 text-gray-700"
+                    id="email address" type="text" placeholder="Email Address">
+                </input>
+            </div>
+            
+            <div class="mb-6">
+                <input 
+                    class="border rounded outline outline-1 outline-color w-full py-2 px-2 text-gray-700" id="password"
+                    type="text" placeholder="Password">
+                </input>
+            </div>
+            
+            <div class="form-check pb-4">
+                <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                    <label class="form-check-label text-color" for="remember">
+                        Remember Me
+                    </label>
+                </input>
+            </div>
+
+            <button 
+                class="bg-color hover:bg-fuchsia-700 text-white text-sm py-2 px-4 rounded"
+                type="button">
+                Log In
+            </button>
+
+            <a class="pt-4 block underline text-sm text-color hover:text-fuchsia-700" href="#">
+                Forgot Your Password?
+            </a>
+
+            <a class="pt-4 block underline text-sm text-color hover:text-fuchsia-700" href="#">
+                First time user?
+            </a>
+    </form>
+</div>
+</body>
+</html>
